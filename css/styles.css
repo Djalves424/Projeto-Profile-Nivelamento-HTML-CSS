@@ -1,0 +1,26 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container {
+    background-color: #2C3E50;
+    height: 100px;
+    width: 100%;
+}
+
+.nav-main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+}
+
+.nav-main a {
+    color: #FFFFFF;
+}
