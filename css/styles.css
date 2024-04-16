@@ -64,8 +64,37 @@ body {
 
 .profile-title {
     margin: 35px 0 0 0;
+    font-size: 2rem;
 }
 
 .profile-description {
     margin: 0;
+    font-size: 1rem;
+}
+
+#portifolio {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.portifolio-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2C3E50;
+}
+
+.portifolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portifolio-item {
+    width: calc(100% - 40px);
+    max-width: 420px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
 }
