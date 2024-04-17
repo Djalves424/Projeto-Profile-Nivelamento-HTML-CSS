@@ -1,3 +1,9 @@
+:root {
+    --color-dark-gray: #2C3E50;
+    --color-white: #FFFFFF;
+    --color-green: #1ABC9C;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -11,14 +17,14 @@ body {
 
 footer {
     height: 120px;
-    background-color: #2C3E50;
+    background-color: var(--color-dark-gray);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .nav-container {
-    background-color: #2C3E50;
+    background-color: var(--color-dark-gray);
     height: 100px;
     width: 100%;
     padding: 20px;
@@ -26,16 +32,13 @@ footer {
 }
 
 .nav-main {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .nav-main a {
-    color: #FFFFFF;
+    color: var(--color-white);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -59,8 +62,8 @@ footer {
 }
 
 .profile-container {
-    background-color: #1ABC9C;
-    color: #FFF;
+    background-color: var(--color-green);
+    color: var(--color-white);
     padding: 160px 0 60px 0;
     display: flex;
     flex-direction: column;
@@ -81,7 +84,8 @@ footer {
     font-size: 1rem;
 }
 
-#portifolio {
+
+.container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -91,7 +95,7 @@ footer {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-    color: #2C3E50;
+    color: var(--color-dark-gray);
     margin: 60px 0 10px 0;
 }
 
@@ -110,7 +114,7 @@ footer {
 }
 
 .footer-title {
-    color: #FFFFFF;
+    color: var(--color-white);
     font-size: 14px;
     margin-top: 30px;
 }
@@ -119,4 +123,40 @@ footer {
     width: 32px;
     height: 32px;
     margin: 10px;
+}
+
+@media(min-width: 576px) {
+
+    html {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    html {
+        font-size: 24px;
+    }
+
+    .portifolio-item {
+        width: 280px;
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    .nav-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-brand {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .menu-items li {
+        font-size: 18px;
+    }
 }
